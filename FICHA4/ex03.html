@@ -43,6 +43,17 @@
 
         console.table(grades)
     }
+
+    calcMedia();
+    
+    function calcMedia(){
+        let sum = 0;
+        for (const notas of grades) {
+            sum += notas.grade;
+            
+        }
+        console.log(sum/grades.length)
+    }
     
     
     </script>
