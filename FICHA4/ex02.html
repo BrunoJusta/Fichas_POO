@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name: "David Silva",
+            course: "POO",
+            grade: 12
+        }
+        listObjectNames();
+        removePropGrade();
+        listObjectNames();
+        calcObjSize();
+        function listObjectNames(){
+            for (const key in student) {
+                
+                console.log(key);
+                //console.log(student[key]);
+                
+            }
+        }
+        function removePropGrade(){
+            delete student.grade
+        }
+
+        function calcObjSize(){
+            let count = 0
+            for (const key in student) {
+                count++;
+                
+            }
+            console.log(count);
+        }
+    
+    </script>
+</body>
+</html>
