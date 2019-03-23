@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>FILMES YEAH!</h2>
+
+    <form id="movie" action="/action_page.php">
+        Titulo do Filme:<br>
+        <input id="tit" type="text" name="Titulo do Filme" value="1" required>
+        <br>
+        Genero:<br>
+        <select id="gen" name = "Genero">
+            <option value="Aventura">Aventura</option>
+            <option value="Ação">Ação</option>
+            <option value="Comédia">Comédia</option>
+            <option value="Terror">Terror</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Outro">Outro</option>
+        </select>
+        <br>
+        Ano:<br>
+        <input type="number" min="1900" max="2019" required>
+        <br>
+        Capa(Link):<br>
+        <input type="url" name="capalink" value="" required>
+        <br>
+        Trailer:<br>
+        <input type="url" name="Trailer" value="">
+        <br>
+        <br>
+        <input id="but" type="submit" value="Submit">  <input type="Reset" value="Reset">
+        
+    </form>
+    <br>
+    <br>
+    <table id="tables">
+        <th id="titulos">Titulo</th>
+        <th id="generos">Genero</th>
+        <th id="opcao">Opções</th>
+    </table>
+    <script src="ex07.js"></script> 
+</body>
+</html>
