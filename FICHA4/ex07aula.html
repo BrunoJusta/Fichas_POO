@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>FILMES YEAH</h1>
+    
+    <hr>
+
+    <form>
+        <label for="txtTitle">Título</label>
+        <input id="txtTitle" type="text" required>
+
+        <label for="sltGenere">Genero</label>
+        <select id="sltGenere" required>
+            <option value="aventura">Aventura</option>
+            <option value="acao">Ação</option>
+            <option value="terror">Terror</option>
+        </select>
+        
+        <label for="txtYear">Ano</label>
+        <input id="txtYear" type="number" min="1950">
+
+        <label for="linkCover">Capa</label>
+        <input id="linkCover" type="url" required>
+
+        <label for="linkTrailer">Trailer</label>
+        <input id="linkTrailer" type="url">
+
+        <input type="submit" value="Submeter">
+        <input type="reset" value="Repor">
+    </form>
+
+
+
+    <!--Tabela que vai exibir todos os filmes-->
+
+    <table></table>   
+    
+    <!--Janela para exibir capa-->
+    <dialog id="dlgCover">
+        <img id="imgCover" src="" alr="">
+        <br>
+        <button id="btnCloseCover">Fechar</button>
+    </dialog>
+
+    <!--Janela para exibir trailer-->
+    <dialog id="dlgTrailer">
+        <iframe id="vidTrailer" width="640" height="360" allow="autoplay"></iframe>
+        <br>
+        <button id="btnCloseTrailer">Fechar</button>
+    </dialog>
+
+    <script src="ex07aula.js"></script>
+</body>
+</html>
