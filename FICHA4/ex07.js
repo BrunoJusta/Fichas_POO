@@ -1,4 +1,8 @@
-
+//function deleteRow(r) {
+    //const table = document.querySelector("table");
+    //var i = r.parentNode.parentNode.rowIndex;
+    //table.deleteRow(i);
+//}
 
 function myFunction() {
     const table = document.querySelector("table");
@@ -14,12 +18,12 @@ function myFunction() {
     <td>
         <input type="button" onclick= "location.href='${caps.value}'" value="Ver Capa" />
         <input type="button" onclick= "location.href='${trail.value}'" value="Ver Trailer" />
-        <input type="button" onclick= "${document.querySelector("table").deleteRow(0)}" value="Remover" />
+    
        
     </td>
     </tr>
     `
-  
+   //<input type="button" onclick= "${deleteRow(r)}" value="Remover" />
 
 }
 
