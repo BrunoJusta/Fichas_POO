@@ -10,3 +10,11 @@ function showNumbers(num1,num2){
         }
     }
 }
+
+sendNudes()
+
+function sendNudes()
+{
+   let   a= prompt("Qual o seu nome?")
+    alert(a+" send nudes ;)")
+}
