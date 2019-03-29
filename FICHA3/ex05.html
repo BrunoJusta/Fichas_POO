@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JOGOS YEAH!</h2>
+    <!-- Formulario -->
+    <form>
+            <label for="name">Nome do Jogo</label>
+            <input id="name" type="text" required>
+    
+            <label for="genre">Genero</label>
+            <select id="genre" required>
+                <option value="aventura">Aventura</option>
+                <option value="acao">Ação</option>
+                <option value="terror">Terror</option>
+            </select>
+            
+            <label for="year">Ano</label>
+            <input id="year" type="number">
+    
+            <label for="cover">Capa</label>
+            <input id="cover" type="url" required>
+        
+            <input type="submit" value="Submeter">
+            <input type="reset" value="Repor">
+        </form>
+    <br>
+    <br>
+    <!-- Tabela  -->
+    <table></table>
+
+     <!--Janela para exibir capa-->
+     <dialog id="dlgCover">
+            <img id="imgCover" src="" alr="">
+            <br>
+            <button id="btnCloseCover">Fechar</button>
+        </dialog>
+    
+    <script src="ex05.js"></script>
+</body>
+</html>
